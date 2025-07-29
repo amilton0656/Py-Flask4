@@ -1,0 +1,16 @@
+/var/www/Py-Flask4/
+│
+├── app.py
+├── wsgi.py
+├── requirements.txt
+├── venv/
+└── templates/
+    └── index.html
+
+
+
+sudo chown -R www-data:www-data /var/www/Py-Flask4
+
+sudo a2dissite 000-default
+sudo a2ensite Py-Flask4
+sudo systemctl reload apache2
